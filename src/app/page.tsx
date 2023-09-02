@@ -8,7 +8,7 @@ export default function Home() {
     <Navbar />
     <Hero />
     <div className="flex justify-center mt-40">
-    <h1 className="text-white text-9xl font-semibold mx-7">Who's gonna carry <br /> the boats</h1>
+    <h1 className="text-white text-9xl font-semibold mx-7">Who&apos;s gonna carry <br /> the boats</h1>
     </div>
     </>
   )
