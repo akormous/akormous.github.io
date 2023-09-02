@@ -1,9 +1,15 @@
+import { Hero } from '@/components/Hero'
+import { Navbar } from '@/components/Navbar'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-3xl font-bold">Akshat Chauhan</h1>
-    </main>
+    <>
+    <Navbar />
+    <Hero />
+    <div className="flex justify-center mt-40">
+    <h1 className="text-white text-9xl font-semibold mx-7">Who's gonna carry <br /> the boats</h1>
+    </div>
+    </>
   )
 }
