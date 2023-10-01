@@ -1,15 +1,16 @@
 'use client'
 import { useState } from "react";
+import Link from "./ui/link";
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     }
-    const links = ["Projects","Experience","About","Contact"]
+    const links = ["projects","experience","about","contact"]
 
     return (
-        <nav>
+        <nav className="absolute w-full bg-transparent">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 text-white">
                 <div className="flex items-center">
                     <h1 className="text-3xl lg:text-5xl text-white font-semibold">AC</h1>
@@ -18,7 +19,7 @@ export function Navbar() {
                     <ul className="flex flex-row">
                         {links.map((link) => (
                             <li key={link}>
-                                <a href="#" className="mx-9">{link}</a>
+                                <Link href={link} name={link} />
                             </li>
                         ))}
                     </ul>
