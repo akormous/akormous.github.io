@@ -1,4 +1,5 @@
 import { H1 } from "./typography/heading";
+import Image from "next/image";
 
 interface ProjectCardProps {
     title: string;
@@ -19,7 +20,7 @@ function ProjectCard(props: ProjectCardProps) {
         
     <div className="item justify-self-center max-w-sm mx-8 my-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-            <img className="rounded-t-lg" src={props.image} alt="" />
+            <Image className="rounded-t-lg" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} src={props.image} alt="" />
         </a>
         <div className="p-5">
             <a href="#">
