@@ -1,26 +1,19 @@
-import { H1 } from "./typography/heading";
+import { H2 } from "./typography/heading";
+import PrimaryButton from "./ui/primarybutton";
+import TextArea from "./ui/textarea";
+import TextField from "./ui/textfield";
 
 export function Contact() {
     return (
         <>
-        <div className="flex flex-col items-center">
-        <H1 content="Contact" />
-        <div className="my-10 w-2/5">
-        <form>
-            
-                <div className="my-4">
-                    <label htmlFor="name" className="text-white text-sm">Name</label>
-                    <input type="text" id="name" className="text-white text-sm block w-full p-2.5 rounded-md bg-slate-800 border border-slate-400" placeholder="Mike" />
-                </div>
-                <div className="my-4">
-                    <label htmlFor="email" className="text-white text-sm">Email</label>
-                    <input type="text" id="email" className="text-white text-sm block w-full p-2.5 rounded-md bg-slate-800 border border-slate-400" placeholder="mike@company.com" />
-                </div>
-                <div className="my-4">
-                    <label htmlFor="message" className="text-white text-sm">Message</label>
-                    <textarea id="message" rows={4} className="text-white text-sm block w-full p-2.5 rounded-md bg-slate-800 border border-slate-400" placeholder="Hey there!" />
-                </div>
-            
+        <div className="flex flex-col mb-36 justify-center items-center">
+            <H2>get in touch</H2>
+        <div className="py-12 px-6 max-w-2xl w-full">
+        <form className="flex flex-col items-center">
+            <TextField type="text" id="name" label="Name" />
+            <TextField type="text" id="email" label="Email" />
+            <TextArea rows={4} id="message" label="Message" />
+            <PrimaryButton>Submit</PrimaryButton>
         </form>
         </div>
         </div>

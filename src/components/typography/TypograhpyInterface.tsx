@@ -1,3 +1,3 @@
 export default interface TypographyProps {
-    content: string;
+    children: React.ReactNode;
 }

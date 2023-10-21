@@ -1,5 +1,7 @@
-import { H1 } from "./typography/heading";
+import { H1, H2, H3 } from "./typography/heading";
 import Image from "next/image";
+import PrimaryButton from "./ui/primarybutton";
+import SecondaryButton from "./ui/secondarybutton";
 
 interface ProjectCardProps {
     title: string;
@@ -39,14 +41,33 @@ function ProjectCard(props: ProjectCardProps) {
     );
 }
 
+function ProjectCard2(props: ProjectCardProps) {
+    return (
+        
+    <div className="border border-slate-700 p-8">
+    <H3>{props.title.toLowerCase()}</H3>
+    <p className="text-white">{props.description}</p>
+        <div className="flex flex-col justify-center items-center my-2">
+            <SecondaryButton><a href={props.href} target="blank" className="text-white">{"check it out ->"}</a></SecondaryButton>
+        </div>
+    </div>
+
+    );
+}
+
 export function Projects(props: ProjectsProps) {
     return (
         <>
-        <div className="flex flex-col my-36 justify-center items-center">
-            <H1 content="Projects" />
-            <div className="container grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 ">
+        <div className="flex flex-col mb-36 justify-center items-center">
+            <H2>projects</H2>
+            {/* <div className="container grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 ">
                 {props.projectList.map((p) => (
                     <ProjectCard key={p.title} {...p} />
+                ))}
+            </div> */}
+            <div className="py-12 px-6 max-w-2xl w-full">
+                {props.projectList.map((p) => (
+                    <ProjectCard2 key={p.title} {...p} />
                 ))}
             </div>
         </div>

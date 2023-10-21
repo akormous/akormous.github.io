@@ -10,10 +10,10 @@ export function Navbar() {
     const links = ["projects","experience","about","contact"]
 
     return (
-        <nav className="absolute w-full bg-transparent">
+        <nav className="fixed w-full z-10 bg-transparent">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 text-white">
                 <div className="flex items-center">
-                    <h1 className="text-3xl lg:text-5xl text-white font-semibold">AC</h1>
+                    <h1 className="text-3xl lg:text-5xl text-white font-semibold">ac</h1>
                 </div>
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul className="flex flex-row">
@@ -38,7 +38,6 @@ export function Navbar() {
                         ))}
                     </ul>
                 </div>
-                
             </div>
         </nav>
     );
