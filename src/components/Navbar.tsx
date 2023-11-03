@@ -33,7 +33,7 @@ export function Navbar() {
                     <ul className="flex backdrop-blur-sm flex-col p-4 mt-4 border border-gray-100 rounded-lg ">
                         {links.map((link) => (
                             <li className="my-4" key={link}>
-                                <a href="#" className="mx-9">{link}</a>
+                                <a href={"#" + link} className="mx-9">{link}</a>
                             </li>
                         ))}
                     </ul>
