@@ -1,10 +1,24 @@
 [
     {
-        "title": "Portfolio Website",
-        "description": "A single page application showcasing my professional experience, projects, skills and interests.",
-        "technologies": ["GatsbyJS", "Material Design"],
-        "image": "https://opengraph.githubassets.com/1/akormous/portfolio/",
-        "href": "https://github.com/akormous/portfolio"
+        "title": "Code Companion",
+        "description": "Shared code-editor application that lets you invite people to your document via a invite code.",
+        "technologies": ["WebSocket", "MERN", "CRDT"],
+        "image": "https://opengraph.githubassets.com/1/akormous/code-companion",
+        "href": "https://github.com/akormous/code-companion"
+    },
+    {
+        "title": "Cloud Functions with AWS lambda",
+        "description": "Serverless function endpoint for my portfolio contact form, sends a message to my discord channel",
+        "technologies": ["Java", "Spring", "AWS","Discord"],
+        "image": "https://opengraph.githubassets.com/1/akormous/portfolio-v2-backend",
+        "href": "https://github.com/akormous/portfolio-v2-backend"
+    },
+    {
+        "title": "Design Patterns",
+        "description": "A collection of C++ projects implementing various object-oriented design patterns.",
+        "technologies": ["C++", "Observer", "Factory", "Decorator"],
+        "image": "https://opengraph.githubassets.com/1/akormous/design-patterns/",
+        "href": "https://github.com/akormous/design-patterns"
     },
     {
         "title": "Facemask Detection Dashboard",
@@ -19,26 +33,5 @@
         "technologies": ["Python-Django", "MySQL", "HTML5", "CSS"],
         "image": "https://opengraph.githubassets.com/1/akormous/sharify/",
         "href": "https://opengraph.githubassets.com/1/akormous/sharify/"
-    },
-    {
-        "title": "Design Patterns",
-        "description": "A collection of C++ projects implementing various object-oriented design patterns.",
-        "technologies": ["C++", "Observer", "Factory", "Decorator"],
-        "image": "https://opengraph.githubassets.com/1/akormous/design-patterns/",
-        "href": "https://github.com/akormous/design-patterns"
-    },
-    {
-        "title": "Software Engineering Resources",
-        "description": "Quick notes of various Software Engineering concepts and best practices.",
-        "technologies": ["Git", "DevOps", "Microservices"],
-        "image": "https://opengraph.githubassets.com/1/akormous/software-engineering-resources/",
-        "href": "https://github.com/akormous/software-engineering-resources/"
-    },
-    {
-        "title": "Data Structures and Algorithms",
-        "description": "My C++ solutions to problems based on various Data Structures and Algorithms.",
-        "technologies": ["Data Structures", "Algorithms", "C++"],
-        "image": "https://opengraph.githubassets.com/1/akormous/dsa/",
-        "href": "https://github.com/akormous/dsa/"
     }
 ]

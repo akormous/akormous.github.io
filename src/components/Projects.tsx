@@ -47,6 +47,9 @@ function ProjectCard2(props: ProjectCardProps) {
     <div className="border border-slate-700 p-8">
     <H3>{props.title.toLowerCase()}</H3>
     <p className="text-white">{props.description}</p>
+    {props.technologies.map((technology) => (
+            <span key={technology} className="bg-indigo-700 text-gray-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full ">{technology}</span>
+    ))}
         <div className="flex flex-col justify-center items-center my-2">
             <SecondaryButton><a href={props.href} target="blank" className="text-white">{"check it out ->"}</a></SecondaryButton>
         </div>
@@ -58,13 +61,8 @@ function ProjectCard2(props: ProjectCardProps) {
 export function Projects(props: ProjectsProps) {
     return (
         <>
-        <div className="flex flex-col mb-36 justify-center items-center">
+        <div id="projects" className="flex flex-col mb-36 justify-center items-center">
             <H2>projects</H2>
-            {/* <div className="container grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 ">
-                {props.projectList.map((p) => (
-                    <ProjectCard key={p.title} {...p} />
-                ))}
-            </div> */}
             <div className="py-12 px-6 max-w-2xl w-full">
                 {props.projectList.map((p) => (
                     <ProjectCard2 key={p.title} {...p} />
