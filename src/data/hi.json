@@ -1,0 +1,67 @@
+{
+    "common": {
+        "submit": "भेजें",
+        "check it out": "इसकी जांच करें",
+        "name": "नाम",
+        "email": "ईमेल",
+        "message": "संदेश"
+    },
+    "Navbar": {
+        "links": {
+            "projects": "परियोजनाएं",
+            "contact": "संपर्क"
+        }
+    },
+    "Hero": {
+        "text1": "सॉफ्टवेयर निर्माण",
+        "text2": "साफ़ तरीके से",
+        "available to work": "काम के लिए उपलब्ध"  
+    },
+    "Projects": {
+        "titletext": "परियोजनाएं",
+        "Code Companion": {
+            "title": "कोड साथी",
+            "description": "साझा कोड-संपादक एप्लिकेशन जो आपको आमंत्रण कोड के माध्यम से लोगों को अपने दस्तावेज़ में आमंत्रित करने देता है।",
+            "technologies": "WebSocket,MERN,CRDT",
+            "image": "https://opengraph.githubassets.com/1/akormous/code-companion",
+            "href": "https://github.com/akormous/code-companion"
+        },
+        "Cloud Functions": {
+            "title": "AWS लैम्ब्डा के साथ क्लाउड फ़ंक्शंस",
+            "description": "मेरे पोर्टफ़ोलियो संपर्क फ़ॉर्म के लिए सर्वर रहित फ़ंक्शन एंडपॉइंट, मेरे डिस्कॉर्ड चैनल को एक संदेश भेजता है",
+            "technologies": "Java,Spring,AWS,Discord",
+            "image": "https://opengraph.githubassets.com/1/akormous/portfolio-v2-backend",
+            "href": "https://github.com/akormous/portfolio-v2-backend"
+        },
+        "Design Patterns": {
+            "title": "डिजाइन पैटर्न्स",
+            "description": "विभिन्न ऑब्जेक्ट-ओरिएंटेड डिज़ाइन पैटर्न को कार्यान्वित करने वाली C++ परियोजनाओं का एक संग्रह",
+            "technologies": "C++,Observer,Factory,Decorator",
+            "image": "https://opengraph.githubassets.com/1/akormous/design-patterns/",
+            "href": "https://github.com/akormous/design-patterns"
+        },
+        "Facemask Detection": {
+            "title": "फेसमास्क डिटेक्शन डैशबोर्ड",
+            "description": "स्वचालित निगरानी प्रदान करने वाला एक वेब एप्लिकेशन जो लोगों द्वारा पहने गए फेस मास्क की जांच करता है।",
+            "technologies": "Python-Django,Tensorflow,ReactJS",
+            "image": "https://opengraph.githubassets.com/1/akormous/Real-Time-Mask-Detection-and-Analysis-System/",
+            "href": "https://github.com/akormous/Real-Time-Mask-Detection-and-Analysis-System"
+        },
+        "Sharify": {
+            "title": "Spotify गाने शेयरिंग ऐप",
+            "description": "एक गीत साझाकरण सेवा जो पोस्ट के रूप में Spotify से मुख्य फ़ीड तक प्लेलिस्ट साझा करने में सक्षम बनाती है।",
+            "technologies": "Python-Django,MySQL,HTML5,CSS",
+            "image": "https://opengraph.githubassets.com/1/akormous/sharify/",
+            "href": "https://opengraph.githubassets.com/1/akormous/sharify/"
+        }
+    },
+    "Contact": {
+        "titletext": "संपर्क में रहो"
+    },
+    "Footer": {
+
+    },
+    "LocaleSwitcher": {
+        "locale": "{locale, select, fr {फ़्रेंच} en {अंग्रेज़ी} hi {हिंदी} other {Unknown}}"
+    }
+}

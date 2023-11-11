@@ -9,7 +9,8 @@ const nextConfig = {
                 pathname: '/1/akormous/**'
             }
         ]
-    }
+    },
+    output: 'export',
 }
 
 module.exports = nextConfig
