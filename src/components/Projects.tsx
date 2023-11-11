@@ -43,7 +43,7 @@ export function Projects() {
             <H2> {t('titletext')} </H2>
             <div className="py-12 px-6 max-w-2xl w-full">
                 {projectsList.map((p) => (
-                    <ProjectCard key={p} title={t(p+'.title')} href={t(p+'.title')} description={t(p+'.description')} technologies={t(p+'.technologies')} image={t(p+'.image')} buttonlinktext={c('check it out')}/>
+                    <ProjectCard key={p} title={t(p+'.title')} href={t(p+'.href')} description={t(p+'.description')} technologies={t(p+'.technologies')} image={t(p+'.image')} buttonlinktext={c('check it out')}/>
                 ))}
             </div>
         </div>
