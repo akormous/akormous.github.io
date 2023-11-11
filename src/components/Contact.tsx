@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useState } from "react";
 import { H2 } from "./typography/heading";
 import PrimaryButton from "./ui/primarybutton";
@@ -10,6 +10,7 @@ import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import FormInputTextField from "./form/FormInputTextField";
 import FormInputTextArea from "./form/FormInputTextArea";
+import { useTranslations } from "next-intl";
 
 const ContactFormSchema = object({
     name: string().min(1, "Name is required"),
@@ -20,6 +21,8 @@ const ContactFormSchema = object({
 type ContactFormInput = Infer<typeof ContactFormSchema>;
 
 export function Contact() {
+    const t = useTranslations('Contact')
+    const c = useTranslations('common')
     const [toasts, setToasts] = useState<ToastObj[]>([]);
     const [autoCloseDuration, setAutoCloseDuration] = useState(5);
     const [loading, setLoading] = useState(false);
@@ -92,7 +95,7 @@ export function Contact() {
              removeToast={removeToast}
             />
         <div id="contact" className="flex flex-col mb-36 justify-center items-center">
-            <H2>get in touch</H2>
+            <H2>{t('titletext')}</H2>
             
 
         <div className="py-12 px-6 max-w-2xl w-full">
@@ -100,19 +103,19 @@ export function Contact() {
                 <form onSubmit={handleSubmit(onSubmitHandler)}>
                     <FormInputTextField
                      name="name"
-                     label="Name"
+                     label={c('name')}
                     />
                     <FormInputTextField
                      name="email"
-                     label="Email"
+                     label={c('email')}
                     />
                     <FormInputTextArea
                      name="message"
-                     label="Message"
+                     label={c('message')}
                      rows={5}
                     />
                     <div className="flex justify-center">
-                        <PrimaryButton type="submit" onClick={handleSubmit} disabled={loading}>Submit <Image src="/rings.svg" width={20} height={20} alt="loading" hidden={!loading} /></PrimaryButton>
+                        <PrimaryButton type="submit" onClick={handleSubmit} disabled={loading}>{c('submit')}<Image src="/rings.svg" width={20} height={20} alt="loading" hidden={!loading} /></PrimaryButton>
                     </div>
                 </form>
             </FormProvider>

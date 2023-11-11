@@ -1,13 +1,18 @@
 'use client'
 import { useState } from "react";
 import Link from "next/link";
+import { LocaleSwitcher } from "./LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
 export function Navbar() {
+    const t = useTranslations('Navbar.links');
+    const links = ["projects", "contact"] as const;
+    
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     }
-    const links = ["projects","contact"]
+    
 
     return (
         <nav className="fixed w-full z-10 bg-opacity-70 backdrop-blur-sm">
@@ -19,9 +24,12 @@ export function Navbar() {
                     <ul className="flex flex-row">
                         {links.map((link) => (
                             <li key={link}>
-                                <Link className="mx-9 hover:text-indigo-500" href={"#" + link}>{link}</Link>
+                                <Link className="mx-9 hover:text-indigo-500" href={"#" + link}>{t(link)}</Link>
                             </li>
                         ))}
+                        <li key="localeswitcher">
+                            <LocaleSwitcher />
+                        </li>
                     </ul>
                 </div>
                 <button type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm md:hidden" onClick={() => toggleMenu()}>
@@ -33,9 +41,12 @@ export function Navbar() {
                     <ul className="flex backdrop-blur-sm flex-col p-4 mt-4 border border-gray-100 rounded-lg ">
                         {links.map((link) => (
                             <li className="my-4" key={link}>
-                                <a href={"#" + link} className="mx-9">{link}</a>
+                                <a href={"#" + link} className="mx-9">{t(link)}</a>
                             </li>
                         ))}
+                        <li className="my-4" key="localeswitcher">
+                            <LocaleSwitcher />
+                        </li>
                     </ul>
                 </div>
             </div>

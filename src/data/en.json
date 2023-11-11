@@ -1,0 +1,67 @@
+{
+    "common": {
+        "submit": "Submit",
+        "check it out": "check it out",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+    },
+    "Navbar": {
+        "links": {
+            "projects": "projects",
+            "contact": "contact"
+        }
+    },
+    "Hero": {
+        "text1": "building software",
+        "text2": "the clean way",
+        "available to work": "available to work"  
+    },
+    "Projects": {
+        "titletext": "projects",
+        "Code Companion": {
+            "title": "Code Companion",
+            "description": "Shared code-editor application that lets you invite people to your document via a invite code.",
+            "technologies": "WebSocket,MERN,CRDT",
+            "image": "https://opengraph.githubassets.com/1/akormous/code-companion",
+            "href": "https://github.com/akormous/code-companion"
+        },
+        "Cloud Functions": {
+            "title": "Cloud Functions with AWS lambda",
+            "description": "Serverless function endpoint for my portfolio contact form, sends a message to my discord channel",
+            "technologies": "Java,Spring,AWS,Discord",
+            "image": "https://opengraph.githubassets.com/1/akormous/portfolio-v2-backend",
+            "href": "https://github.com/akormous/portfolio-v2-backend"
+        },
+        "Design Patterns": {
+            "title": "Design Patterns",
+            "description": "A collection of C++ projects implementing various object-oriented design patterns.",
+            "technologies": "C++,Observer,Factory,Decorator",
+            "image": "https://opengraph.githubassets.com/1/akormous/design-patterns/",
+            "href": "https://github.com/akormous/design-patterns"
+        },
+        "Facemask Detection": {
+            "title": "Facemask Detection Dashboard",
+            "description": "A web application providing automatic surveillance that checks for face masks worn by people.",
+            "technologies": "Python-Django,Tensorflow,ReactJS",
+            "image": "https://opengraph.githubassets.com/1/akormous/Real-Time-Mask-Detection-and-Analysis-System/",
+            "href": "https://github.com/akormous/Real-Time-Mask-Detection-and-Analysis-System"
+        },
+        "Sharify": {
+            "title": "Spotify songs sharing app",
+            "description": "A song sharing service that enables sharing of playlists from Spotify to main feed in the form of posts.",
+            "technologies": "Python-Django,MySQL,HTML5,CSS",
+            "image": "https://opengraph.githubassets.com/1/akormous/sharify/",
+            "href": "https://opengraph.githubassets.com/1/akormous/sharify/"
+        }
+    },
+    "Contact": {
+        "titletext": "get in touch"
+    },
+    "Footer": {
+
+    },
+    "LocaleSwitcher": {
+        "locale": "{locale, select, fr {french} en {english} hi {hindi} other {Unknown}}"
+    }
+}
