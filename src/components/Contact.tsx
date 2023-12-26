@@ -104,14 +104,17 @@ export function Contact() {
                     <FormInputTextField
                      name="name"
                      label={c('name')}
+                     placeholder="Jeff"
                     />
                     <FormInputTextField
                      name="email"
                      label={c('email')}
+                     placeholder="jeff@company.com"
                     />
                     <FormInputTextArea
                      name="message"
                      label={c('message')}
+                     placeholder="my name jeff"
                      rows={5}
                     />
                     <div className="flex justify-center">
