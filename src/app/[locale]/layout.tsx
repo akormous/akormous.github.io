@@ -1,13 +1,11 @@
 import { Metadata } from 'next'
 import '../globals.css'
-// import { Manrope } from 'next/font/google';
-import { Red_Hat_Display } from 'next/font/google'
+import { Manrope } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { localeList } from '@/data/localeSettings';
 
-// const manrope = Manrope({ subsets: ['latin'] });
-const rhd = Red_Hat_Display({ subsets: ['latin'] });
+const manrope = Manrope({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Akshat Chauhan',
@@ -38,7 +36,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={rhd.className}>
+      <body className={manrope.className}>
         <NextIntlClientProvider locale={locale} messages={data}>
           {children}
         </NextIntlClientProvider>
