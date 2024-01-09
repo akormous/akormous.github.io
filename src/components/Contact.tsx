@@ -20,7 +20,7 @@ const ContactFormSchema = object({
 
 type ContactFormInput = Infer<typeof ContactFormSchema>;
 
-export function Contact() {
+export default function Contact() {
     const t = useTranslations('Contact')
     const c = useTranslations('common')
     const [toasts, setToasts] = useState<ToastObj[]>([]);

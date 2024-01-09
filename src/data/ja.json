@@ -1,0 +1,72 @@
+{
+    "common": {
+        "submit": "提出する",
+        "check it out": "それをチェックしてください",
+        "name": "名前",
+        "email": "Eメール",
+        "message": "メッセージ"
+    },
+    "Navbar": {
+        "links": {
+            "projects": "プロジェクト",
+            "contact": "接触",
+            "about": "について"
+        }
+    },
+    "Hero": {
+        "text1": "ソフトウェアの構築",
+        "text2": "きれいな方法",
+        "available to work": "私に連絡して！"  
+    },
+    "Projects": {
+        "titletext": "プロジェクト",
+        "Code Companion": {
+            "title": "コードコンパニオン",
+            "description": "招待コードを介して他のユーザーをドキュメントに招待できる共有コード エディター アプリケーション。",
+            "technologies": "WebSocket,MERN,CRDT",
+            "image": "https://opengraph.githubassets.com/1/akormous/code-companion",
+            "href": "https://github.com/akormous/code-companion"
+        },
+        "Cloud Functions": {
+            "title": "AWSラムダを使用したクラウド機能",
+            "description": "私のポートフォリオお問い合わせフォームのサーバーレス関数エンドポイントは、私の Discord チャネルにメッセージを送信します",
+            "technologies": "Java,Spring,AWS,Discord",
+            "image": "https://opengraph.githubassets.com/1/akormous/portfolio-v2-backend",
+            "href": "https://github.com/akormous/portfolio-v2-backend"
+        },
+        "Design Patterns": {
+            "title": "デザインパターン",
+            "description": "さまざまなオブジェクト指向設計パターンを実装する C++ プロジェクトのコレクション。",
+            "technologies": "C++,Observer,Factory,Decorator",
+            "image": "https://opengraph.githubassets.com/1/akormous/design-patterns/",
+            "href": "https://github.com/akormous/design-patterns"
+        },
+        "Facemask Detection": {
+            "title": "フェイスマスク検出ダッシュボード",
+            "description": "人々が着用しているフェイスマスクをチェックする自動監視を提供する Web アプリケーション。",
+            "technologies": "Python-Django,Tensorflow,ReactJS",
+            "image": "https://opengraph.githubassets.com/1/akormous/Real-Time-Mask-Detection-and-Analysis-System/",
+            "href": "https://github.com/akormous/Real-Time-Mask-Detection-and-Analysis-System"
+        },
+        "Sharify": {
+            "title": "Spotify の曲共有アプリ",
+            "description": "Spotifyのプレイリストを投稿形式でメインフィードに共有できる楽曲共有サービス。",
+            "technologies": "Python-Django,MySQL,HTML5,CSS",
+            "image": "https://opengraph.githubassets.com/1/akormous/sharify/",
+            "href": "https://opengraph.githubassets.com/1/akormous/sharify/"
+        }
+    },
+    "About": {
+        "titletext": "私について",
+        "paragraph": "私はフルスタック Web アプリケーションの構築に豊富な経験を持つソフトウェア開発者です。私は非常に有能で、長期間使用できるクリーンなソフトウェアを構築することを熱心に支持しています。ピアノやビデオゲームをするのも好きです。"
+    },
+    "Contact": {
+        "titletext": "連絡する"
+    },
+    "Footer": {
+
+    },
+    "LocaleSwitcher": {
+        "locale": "{locale, select, fr {フランス語} en {英語} hi {ヒンディー語} ja {日本語} other {Unknown}}"
+    }
+}

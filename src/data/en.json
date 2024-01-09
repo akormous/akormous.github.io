@@ -9,13 +9,14 @@
     "Navbar": {
         "links": {
             "projects": "projects",
-            "contact": "contact"
+            "contact": "contact",
+            "about": "about"
         }
     },
     "Hero": {
         "text1": "building software",
         "text2": "the clean way",
-        "available to work": "available to work"  
+        "available to work": "contact me!"  
     },
     "Projects": {
         "titletext": "projects",
@@ -55,6 +56,10 @@
             "href": "https://opengraph.githubassets.com/1/akormous/sharify/"
         }
     },
+    "About": {
+        "titletext": "about me",
+        "paragraph": "I am a Software Developer with extensive experience in building full-stack web applications. I'm highly capable and an avid advocate for building clean software that lasts for a long time. I also like to play piano and video games."
+    },
     "Contact": {
         "titletext": "get in touch"
     },
@@ -62,6 +67,6 @@
 
     },
     "LocaleSwitcher": {
-        "locale": "{locale, select, fr {french} en {english} hi {hindi} other {Unknown}}"
+        "locale": "{locale, select, fr {french} en {english} hi {hindi} ja {japanese} other {Unknown}}"
     }
 }

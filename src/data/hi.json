@@ -9,13 +9,14 @@
     "Navbar": {
         "links": {
             "projects": "परियोजनाएं",
-            "contact": "संपर्क"
+            "contact": "संपर्क",
+            "about": "परिचय"
         }
     },
     "Hero": {
         "text1": "सॉफ्टवेयर निर्माण",
         "text2": "साफ़ तरीके से",
-        "available to work": "काम के लिए उपलब्ध"  
+        "available to work": "मुझसे संपर्क करें!"  
     },
     "Projects": {
         "titletext": "परियोजनाएं",
@@ -55,6 +56,10 @@
             "href": "https://opengraph.githubassets.com/1/akormous/sharify/"
         }
     },
+    "About": {
+        "titletext": "परिचय",
+        "paragraph": "मैं एक सॉफ्टवेयर डेवलपर हूं जिसके पास फुल-स्टैक वेब एप्लिकेशन बनाने का व्यापक अनुभव है। मैं अत्यधिक सक्षम हूं और लंबे समय तक चलने वाले साफ-सुथरे सॉफ्टवेयर के निर्माण का प्रबल समर्थक हूं। मुझे पियानो और वीडियो गेम खेलना भी पसंद है।"
+    },
     "Contact": {
         "titletext": "संपर्क में रहो"
     },
@@ -62,6 +67,6 @@
 
     },
     "LocaleSwitcher": {
-        "locale": "{locale, select, fr {फ़्रेंच} en {अंग्रेज़ी} hi {हिंदी} other {Unknown}}"
+        "locale": "{locale, select, fr {फ़्रेंच} en {अंग्रेज़ी} hi {हिंदी} ja {जापानी} other {Unknown}}"
     }
 }

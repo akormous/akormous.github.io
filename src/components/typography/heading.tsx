@@ -20,3 +20,10 @@ export function H3(props: TypographyProps) {
     <h3 className="text-white text-1xl md:text-3xl lg:text-5xl my-4">{props.children}</h3>
     </>)
 }
+
+export function H4(props: TypographyProps) {
+    return (
+    <>
+    <h3 className="text-white text-1xl md:text-xl lg:text-3xl my-4">{props.children}</h3>
+    </>)
+}

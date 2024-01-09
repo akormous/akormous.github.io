@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 export function Navbar() {
     const t = useTranslations('Navbar.links');
-    const links = ["projects", "contact"] as const;
+    const links = ["projects", "contact", "about"] as const;
     
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {

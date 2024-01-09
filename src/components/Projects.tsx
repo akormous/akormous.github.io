@@ -34,7 +34,7 @@ function ProjectCard(props: ProjectCardProps) {
     );
 }
 
-export function Projects() {
+export default function Projects() {
     const t = useTranslations('Projects')
     const c = useTranslations('common')
     return (
