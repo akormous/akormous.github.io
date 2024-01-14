@@ -9,7 +9,7 @@ export default function About() {
         <>
         <div id="about" className="flex flex-col mb-36 justify-center items-center">
             <H2> {t('titletext')} </H2>
-            <div className="max-w-2xl text-justify py-12">
+            <div className="max-w-2xl text-justify py-12 px-6">
                 <H4>{t('paragraph')}</H4>            
             </div>
         </div>
